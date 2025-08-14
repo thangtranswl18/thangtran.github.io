@@ -1,446 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ads.txt Hosting Site - GitHub Pages</title>
-    <meta name="description" content="Free ads.txt hosting solution using GitHub Pages for digital advertising verification">
-    <meta name="keywords" content="ads.txt, github pages, advertising, digital ads, publisher">
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+    <title>Thang Tran | Mobile App Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <style>
-        :root {
-            --primary-color: #0d6efd;
-            --secondary-color: #6c757d;
-            --success-color: #198754;
-            --warning-color: #ffc107;
-            --danger-color: #dc3545;
-            --dark-color: #212529;
-            --light-color: #f8f9fa;
-        }
-        
         body {
             font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-            color: var(--dark-color);
-        }
-        
-        .hero-section {
-            background: linear-gradient(135deg, var(--primary-color) 0%, #0056b3 100%);
-            color: white;
-            padding: 80px 0;
-        }
-        
-        .feature-card {
-            border: none;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            height: 100%;
-        }
-        
-        .feature-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-        }
-        
-        .feature-icon {
-            width: 60px;
-            height: 60px;
-            background: var(--primary-color);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 20px;
-            color: white;
-            font-size: 24px;
-        }
-        
-        .code-block {
             background: #f8f9fa;
-            border: 1px solid #e9ecef;
-            border-radius: 8px;
-            padding: 20px;
-            margin: 20px 0;
-            font-family: 'Courier New', monospace;
-            overflow-x: auto;
         }
-        
-        .step-number {
-            width: 40px;
-            height: 40px;
-            background: var(--primary-color);
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            margin-right: 15px;
-            flex-shrink: 0;
+
+        .navbar {
+            background: #343a40;
         }
-        
+
         .navbar-brand {
             font-weight: 600;
         }
-        
+
+        .nav-link {
+            color: white !important;
+        }
+
+        .nav-link:hover {
+            color: #ffc107 !important;
+        }
+
         .section-title {
-            position: relative;
-            margin-bottom: 50px;
+            font-weight: 600;
+            font-size: 1.5rem;
         }
-        
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 60px;
-            height: 3px;
-            background: var(--primary-color);
+
+        .card {
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
         }
-        
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-icon {
+            font-size: 2rem;
+            color: #0d6efd;
+        }
+
+        .card-title {
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+
+        .card-text {
+            font-size: 1rem;
+        }
+
         .btn-custom {
             padding: 12px 30px;
             font-weight: 500;
             border-radius: 25px;
             transition: all 0.3s ease;
         }
-        
+
         .btn-custom:hover {
             transform: translateY(-2px);
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         }
-        
+
         .footer {
-            background: var(--dark-color);
+            background: #343a40;
             color: white;
             padding: 40px 0 20px;
         }
-        
-        .table-responsive {
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        
-        .alert-custom {
-            border: none;
-            border-radius: 10px;
-            padding: 20px;
-        }
-        
-        @media (max-width: 768px) {
-            .hero-section {
-                padding: 60px 0;
-            }
-            
-            .hero-section h1 {
-                font-size: 2.5rem;
-            }
-        }
     </style>
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#"><i class="fas fa-globe me-2"></i>Ads.txt Hosting</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <a class="navbar-brand" href="#">Thang Tran</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#setup">Setup</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#examples">Examples</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#resources">Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#closing">Closing</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero-section">
+    <!-- Home Section -->
+    <section id="home" class="py-5">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h1 class="display-4 fw-bold mb-4">🌐 Ads.txt Hosting Site</h1>
-                    <p class="lead mb-4">A simple and efficient GitHub Pages website for hosting ads.txt files to verify authorized digital advertising sellers.</p>
-                    <div class="d-flex flex-wrap gap-3">
-                        <a href="#setup" class="btn btn-light btn-custom">
-                            <i class="fas fa-rocket me-2"></i>Get Started
-                        </a>
-                        <a href="https://github.com/yourusername/ads-txt-site" class="btn btn-outline-light btn-custom">
-                            <i class="fab fa-github me-2"></i>View on GitHub
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-6 text-center">
-                    <div class="mt-5 mt-lg-0">
-                        <i class="fas fa-file-alt" style="font-size: 200px; opacity: 0.3;"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section id="features" class="py-5">
-        <div class="container">
-            <h2 class="text-center section-title">✨ Features</h2>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
-                    <div class="card feature-card">
-                        <div class="card-body text-center">
-                            <div class="feature-icon">
-                                <i class="fas fa-dollar-sign"></i>
-                            </div>
-                            <h5 class="card-title">Free Hosting</h5>
-                            <p class="card-text">Powered by GitHub Pages - completely free with no hidden costs</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card feature-card">
-                        <div class="card-body text-center">
-                            <div class="feature-icon">
-                                <i class="fas fa-edit"></i>
-                            </div>
-                            <h5 class="card-title">Easy Management</h5>
-                            <p class="card-text">Simple file-based editing through GitHub's web interface</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card feature-card">
-                        <div class="card-body text-center">
-                            <div class="feature-icon">
-                                <i class="fas fa-history"></i>
-                            </div>
-                            <h5 class="card-title">Version Control</h5>
-                            <p class="card-text">Full git history of all changes with rollback capability</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card feature-card">
-                        <div class="card-body text-center">
-                            <div class="feature-icon">
-                                <i class="fas fa-globe"></i>
-                            </div>
-                            <h5 class="card-title">Custom Domain</h5>
-                            <p class="card-text">Use your own domain with automatic SSL certificates</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card feature-card">
-                        <div class="card-body text-center">
-                            <div class="feature-icon">
-                                <i class="fas fa-shield-alt"></i>
-                            </div>
-                            <h5 class="card-title">SSL/HTTPS</h5>
-                            <p class="card-text">Automatic SSL certificates for secure connections</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card feature-card">
-                        <div class="card-body text-center">
-                            <div class="feature-icon">
-                                <i class="fas fa-mobile-alt"></i>
-                            </div>
-                            <h5 class="card-title">Mobile Support</h5>
-                            <p class="card-text">app-ads.txt support for mobile app monetization</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Quick Setup Section -->
-    <section id="setup" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center section-title">🚀 Quick Start</h2>
             <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <div class="d-flex align-items-start mb-4">
-                        <div class="step-number">1</div>
-                        <div>
-                            <h5>Setup Repository</h5>
-                            <p>Fork or clone the repository to get started</p>
-                            <div class="code-block">
-git clone https://github.com/yourusername/ads-txt-site.git<br>
-cd ads-txt-site
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="d-flex align-items-start mb-4">
-                        <div class="step-number">2</div>
-                        <div>
-                            <h5>Configure ads.txt</h5>
-                            <p>Edit the ads.txt file with your authorized sellers</p>
-                            <div class="code-block">
-# ads.txt for yourdomain.com<br>
-google.com, pub-1234567890123456, DIRECT, f08c47fec0942fa0<br>
-facebook.com, 123456789, DIRECT, c3e20eee3f780d68<br>
-amazon.com, 3456, DIRECT, 78b21b4b2c94d41c
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="d-flex align-items-start mb-4">
-                        <div class="step-number">3</div>
-                        <div>
-                            <h5>Enable GitHub Pages</h5>
-                            <p>Go to Settings → Pages → Deploy from branch → main</p>
-                        </div>
-                    </div>
-                    
-                    <div class="d-flex align-items-start">
-                        <div class="step-number">4</div>
-                        <div>
-                            <h5>Access Your ads.txt</h5>
-                            <p>Your file will be available at:</p>
-                            <div class="alert alert-custom alert-success">
-                                <i class="fas fa-link me-2"></i>
-                                <code>https://yourusername.github.io/ads-txt-site/ads.txt</code>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-md-6 order-md-2">
+                    <img src="https://avatars.githubusercontent.com/u/12345678?v=4" class="img-fluid" alt="Thang Tran">
+                </div>
+                <div class="col-md-6 order-md-1 text-center">
+                    <h1 class="display-4">Thang Tran</h1>
+                    <p class="lead">Mobile App Developer</p>
+                    <p class="mb-4">I am a mobile app developer with experience in developing apps using Flutter and
+                        Native.</p>
+                    <p class="mb-4">Phone: +84981125566</p>
+                    <p class="mb-4">Email: <a href="mailto:tranthang.mt@gmail.com">tranthang.mt@gmail.com</a></p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Examples Section -->
-    <section id="examples" class="py-5">
+    <!-- About Me Section -->
+    <section id="about" class="py-5">
         <div class="container">
-            <h2 class="text-center section-title">📝 Common Ad Networks</h2>
             <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <div class="table-responsive">
-                        <table class="table table-striped">
-                            <thead class="table-dark">
-                                <tr>
-                                    <th>Ad Network</th>
-                                    <th>Example Entry</th>
-                                    <th>Type</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><i class="fab fa-google text-primary me-2"></i>Google AdSense</td>
-                                    <td><code>google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0</code></td>
-                                    <td><span class="badge bg-success">Web</span></td>
-                                </tr>
-                                <tr>
-                                    <td><i class="fab fa-facebook text-primary me-2"></i>Facebook Audience Network</td>
-                                    <td><code>facebook.com, XXXXXXXXXXXXXXXX, DIRECT, c3e20eee3f780d68</code></td>
-                                    <td><span class="badge bg-success">Web/App</span></td>
-                                </tr>
-                                <tr>
-                                    <td><i class="fab fa-amazon text-warning me-2"></i>Amazon Publisher Services</td>
-                                    <td><code>amazon.com, XXXX, DIRECT, 78b21b4b2c94d41c</code></td>
-                                    <td><span class="badge bg-success">Web</span></td>
-                                </tr>
-                                <tr>
-                                    <td><i class="fas fa-gamepad text-info me-2"></i>Unity Ads</td>
-                                    <td><code>unity.com, XXXXXXX, DIRECT, 96cabb5fbdde37a7</code></td>
-                                    <td><span class="badge bg-info">App</span></td>
-                                </tr>
-                                <tr>
-                                    <td><i class="fas fa-mobile-alt text-success me-2"></i>AppLovin</td>
-                                    <td><code>applovin.com, XXXXXXXXXXXXXXXX, DIRECT</code></td>
-                                    <td><span class="badge bg-info">App</span></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <div class="alert alert-custom alert-warning mt-4">
-                        <i class="fas fa-exclamation-triangle me-2"></i>
-                        <strong>Important:</strong> Replace all <code>XXXXXXXXXXXXXXXX</code> placeholders with your actual publisher IDs from each ad network.
-                    </div>
+                <div class="col-md-12 text-center">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="lead">I am a mobile app developer with experience in developing apps using Flutter and
+                        Native. I am passionate about building beautiful and functional apps that make a difference in
+                        people's lives.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Mobile Apps Section -->
-    <section class="py-5 bg-light">
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center section-title">📱 Mobile Apps (app-ads.txt)</h2>
             <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <p class="text-center mb-4">For mobile app monetization, create an <code>app-ads.txt</code> file:</p>
-                    <div class="code-block">
-# app-ads.txt for mobile applications<br>
-google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0<br>
-facebook.com, XXXXXXXXXXXXXXXX, DIRECT, c3e20eee3f780d68<br>
-unity.com, XXXXXXX, DIRECT, 96cabb5fbdde37a7<br>
-applovin.com, XXXXXXXXXXXXXXXX, DIRECT
-                    </div>
-                    <div class="text-center mt-4">
-                        <a href="https://iabtechlab.com/ads-txt/" class="btn btn-outline-primary btn-custom" target="_blank">
-                            <i class="fas fa-external-link-alt me-2"></i>Learn More About app-ads.txt
-                        </a>
-                    </div>
+                <div class="col-md-12 text-center">
+                    <h2 class="section-title">Services</h2>
+                    <p class="lead">I offer mobile app development services using Flutter or Native.</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Verification Section -->
-    <section class="py-5">
-        <div class="container">
-            <h2 class="text-center section-title">✅ Verification & Testing</h2>
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title"><i class="fas fa-tools me-2 text-primary"></i>Validation Tools</h5>
-                            <ul class="list-unstyled">
-                                <li class="mb-2">
-                                    <a href="https://iabtechlab.com/ads-txt/" target="_blank" class="text-decoration-none">
-                                        <i class="fas fa-external-link-alt me-2"></i>IAB ads.txt Validator
-                                    </a>
-                                </li>
-                                <li class="mb-2">
-                                    <a href="https://support.google.com/adsense/answer/7532444" target="_blank" class="text-decoration-none">
-                                        <i class="fas fa-external-link-alt me-2"></i>Google ads.txt Guide
-                                    </a>
-                                </li>
-                                <li class="mb-2">
-                                    <a href="https://adstxt.guru/" target="_blank" class="text-decoration-none">
-                                        <i class="fas fa-external-link-alt me-2"></i>Ads.txt Guru
-                                    </a>
-                                </li>
-                            </ul>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-mobile-alt card-icon"></i>
+                            <h5 class="card-title">Mobile App Development</h5>
+                            <p class="card-text">Developing apps using Flutter or Native.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title"><i class="fas fa-terminal me-2 text-success"></i>Manual Testing</h5>
-                            <div class="code-block">
-# Test direct access<br>
-curl https://yourdomain.com/ads.txt<br><br>
-# Check HTTP headers<br>
-curl -I https://yourdomain.com/ads.txt<br><br>
-# Validate format<br>
-curl https://yourdomain.com/ads.txt | head -5
-                            </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-code card-icon"></i>
+                            <h5 class="card-title">Custom App Development</h5>
+                            <p class="card-text">Developing custom apps based on clients' requirements.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-cogs card-icon"></i>
+                            <h5 class="card-title">App Maintenance</h5>
+                            <p class="card-text">Maintaining and updating existing apps.</p>
                         </div>
                     </div>
                 </div>
@@ -448,46 +171,52 @@ curl https://yourdomain.com/ads.txt | head -5
         </div>
     </section>
 
-    <!-- Resources Section -->
-    <section id="resources" class="py-5 bg-light">
+    <!-- Solutions Section -->
+    <section id="projects" class="py-5">
         <div class="container">
-            <h2 class="text-center section-title">📚 Resources</h2>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-3">
-                    <div class="card feature-card text-center">
-                        <div class="card-body">
-                            <i class="fas fa-book text-primary mb-3" style="font-size: 2rem;"></i>
-                            <h6 class="card-title">IAB Specification</h6>
-                            <a href="https://iabtechlab.com/ads-txt/" target="_blank" class="btn btn-sm btn-outline-primary">View Docs</a>
-                        </div>
-                    </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="section-title">Projects</h2>
+                    <p class="lead">Some of my projects:</p>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="card feature-card text-center">
-                        <div class="card-body">
-                            <i class="fab fa-github text-dark mb-3" style="font-size: 2rem;"></i>
-                            <h6 class="card-title">GitHub Pages</h6>
-                            <a href="https://docs.github.com/en/pages" target="_blank" class="btn btn-sm btn-outline-dark">Documentation</a>
-                        </div>
-                    </div>
+                <div class="col-md-12">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <a href="https://github.com/thangtran-dev/flutter_exam" target="_blank">Flutter Exam</a> - A
+                            Flutter app for studying and practicing for the Flutter Developer Certification exam.
+                        </li>
+                        <li class="list-group-item">
+                            <a href="https://github.com/thangtran-dev/flutter_todo" target="_blank">Flutter Todo</a> - A
+                            simple Todo app built with Flutter.
+                        </li>
+                        <li class="list-group-item">
+                            <a href="https://github.com/thangtran-dev/flutter_news" target="_blank">Flutter News</a> - A
+                            simple news app built with Flutter.
+                        </li>
+                        <li class="list-group-item">
+                            <a href="https://github.com/thangtran-dev/flutter_weather" target="_blank">Flutter
+                                Weather</a> - A simple weather app built with Flutter.
+                        </li>
+                        <li class="list-group-item">
+                            <a href="https://github.com/thangtran-dev/flutter_chat" target="_blank">Flutter Chat</a> - A
+                            simple chat app built with Flutter.
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="card feature-card text-center">
-                        <div class="card-body">
-                            <i class="fab fa-google text-warning mb-3" style="font-size: 2rem;"></i>
-                            <h6 class="card-title">Google AdSense</h6>
-                            <a href="https://support.google.com/adsense/answer/7532444" target="_blank" class="btn btn-sm btn-outline-warning">Guide</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="card feature-card text-center">
-                        <div class="card-body">
-                            <i class="fab fa-facebook text-primary mb-3" style="font-size: 2rem;"></i>
-                            <h6 class="card-title">Facebook Ads</h6>
-                            <a href="https://www.facebook.com/business/help/1701077533414756" target="_blank" class="btn btn-sm btn-outline-primary">Requirements</a>
-                        </div>
-                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Closing Section -->
+    <section id="closing" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="section-title">Closing</h2>
+                    <p class="lead">Thank you for visiting my website. I hope you have a better understanding of who I
+                        am and what I do.</p>
+                    <p class="mb-4">If you have any questions or need more information, please don't hesitate to contact
+                        me.</p>
                 </div>
             </div>
         </div>
@@ -498,84 +227,8 @@ curl https://yourdomain.com/ads.txt | head -5
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h5><i class="fas fa-globe me-2"></i>Ads.txt Hosting Site</h5>
-                    <p class="mb-3">Free, reliable ads.txt hosting solution using GitHub Pages for digital advertising verification.</p>
-                    <div class="d-flex gap-3">
-                        <a href="https://github.com/yourusername/ads-txt-site" class="text-white">
-                            <i class="fab fa-github fa-lg"></i>
-                        </a>
-                        <a href="https://twitter.com/yourusername" class="text-white">
-                            <i class="fab fa-twitter fa-lg"></i>
-                        </a>
-                        <a href="mailto:your-email@domain.com" class="text-white">
-                            <i class="fas fa-envelope fa-lg"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <h6>Quick Links</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="#features" class="text-white-50 text-decoration-none">Features</a></li>
-                        <li><a href="#setup" class="text-white-50 text-decoration-none">Setup Guide</a></li>
-                        <li><a href="#examples" class="text-white-50 text-decoration-none">Examples</a></li>
-                        <li><a href="#resources" class="text-white-50 text-decoration-none">Resources</a></li>
-                    </ul>
-                </div>
-            </div>
-            <hr class="my-4">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <p class="mb-0">&copy; 2024 Ads.txt Hosting Site. Licensed under MIT License.</p>
+                    <p class="mb-0">Copyright &copy; 2025 Thang Tran. All rights reserved.</p>
                 </div>
                 <div class="col-md-6 text-md-end">
                     <p class="mb-0">
                         <i class="fas fa-heart text-danger me-1"></i>
-                        Made with GitHub Pages
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Smooth Scrolling -->
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Add active class to navbar on scroll
-        window.addEventListener('scroll', function() {
-            const sections = document.querySelectorAll('section[id]');
-            const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
-
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (scrollY >= (sectionTop - 200)) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === '#' + current) {
-                    link.classList.add('active');
-                }
-            });
-        });
-    </script>
-</body>
-</html>
